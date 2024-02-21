@@ -30,7 +30,7 @@ client.on('ready', async () => {
     .setName('jpv')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('https://i.pinimg.com/564x/69/3b/4f/693b4f23122fd6ea109f21f5835c6c06.jpg') //You can put links in tenor or discord and etc.
+ .setAssetsLargeImage('https://images-ext-2.discordapp.net/external/HGeJks10iWP3iwhG7VUeHYB56SfBwyu7KMU7pLj9ilI/https/i.pinimg.com/originals/69/3b/4f/693b4f23122fd6ea109f21f5835c6c06.jpg?format=webp&width=479&height=473') //You can put links in tenor or discord and etc.
     .setAssetsLargeText('i love maya') //Text when you hover the Large image
     .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1167498348496957560.gif?size=96&quality=lossless') //You can put links in tenor or discord and etc.
     .setAssetsSmallText('ambot') //Text when you hover the Small image
