@@ -23,28 +23,28 @@ client.on('ready', async () => {
   console.log(`${client.user.tag} - rich presence started!`);
 
   const r = new Discord.RichPresence()
-    .setApplicationId('')
+    .setApplicationId('1209172238259978280')
     .setType('STREAMING')
-    .setURL('https://www.youtube.com/watch?v=dQw4w9WgXcQ') //Must be a youtube video link 
-    .setState('Recording')
-    .setName('')
+    .setURL('https://www.youtube.com/watch?v=nGKFgidwsTM&list=RDnGKFgidwsTM&start_radio=1') //Must be a youtube video link 
+    .setState('Valorant')
+    .setName('jpv')
     .setDetails(`Valorant [${formatTime()}]`)
     .setStartTimestamp(Date.now())
- .setAssetsLargeImage('') //You can put links in tenor or discord and etc.
-    .setAssetsLargeText('Boring') //Text when you hover the Large image
-    .setAssetsSmallImage('') //You can put links in tenor or discord and etc.
-    .setAssetsSmallText('Twitch') //Text when you hover the Small image
-    .addButton('Watch', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ')
-    .addButton('Donate', 'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+ .setAssetsLargeImage('https://i.pinimg.com/564x/fa/b4/2b/fab42b7130e461f8010d69fe5a9c8008.jpg') //You can put links in tenor or discord and etc.
+    .setAssetsLargeText('i love maya') //Text when you hover the Large image
+    .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1167498348496957560.gif?size=96&quality=lossless') //You can put links in tenor or discord and etc.
+    .setAssetsSmallText('ambot') //Text when you hover the Small image
+    .addButton('Shop', 'https://www.facebook.com/profile.php?id=100082747396080')
+    .addButton('Vouches', 'https://www.facebook.com/photo/?fbid=323159467118964&set=a.323159523785625');
 
   client.user.setActivity(r);
-  client.user.setPresence({ status: "dnd" }); //dnd, online, idle, offline
+  client.user.setPresence({ status: "idle" }); //dnd, online, idle, offline
 
   let prevTime = null;
   setInterval(() => {
     const newTime = formatTime();
     if (newTime !== prevTime) {
-      const newDetails = ` [${newTime}]`;
+      const newDetails = ` 0623 `;
       r.setDetails(newDetails);
       client.user.setActivity(r);
       prevTime = newTime;
